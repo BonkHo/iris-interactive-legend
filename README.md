@@ -1,2 +1,2 @@
 # population-interactive-legend
-Mac out of battery
+Interactive graph with event listeners.
