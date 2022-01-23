@@ -13,7 +13,7 @@ import ColorLegend from "./components/ColorLegend";
 const App = () => {
 	// Values for visual
 	const data = useData();
-	console.log(data);
+	const [hoveredValue, setHoveredValue] = useState(null);
 	const width = 1200;
 	const height = 500;
 	const margin = { top: 30, right: 200, bottom: 80, left: 150 };
@@ -77,6 +77,8 @@ const App = () => {
 		.range([0, innerHeight])
 		.nice();
 
+	const filteredData = data.filter((d) => hoveredValue === colorValue(d));
+
 	return (
 		<>
 			<div className="menus-container">
@@ -129,10 +131,11 @@ const App = () => {
 							legendSpacing={25}
 							legendCircleRadius={circleRadius}
 							legendTextOffset={20}
+							onHover={setHoveredValue}
 						/>
 					</g>
 					<CircleMark
-						data={data}
+						data={filteredData}
 						xScale={xScale}
 						yScale={yScale}
 						xValue={xValue}

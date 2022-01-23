@@ -5,9 +5,7 @@ const ColorLegend = ({
 	legendSpacing = 20,
 	legendCircleRadius = 10,
 	legendTextOffset = 20,
-	onHover = (hoveredValue) => {
-		console.log(hoveredValue);
-	},
+	onHover,
 }) =>
 	colorScale.domain().map((domainValue, i) => (
 		<g
