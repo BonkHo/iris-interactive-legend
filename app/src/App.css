@@ -9,11 +9,13 @@ body {
 .tick text {
 	fill: #635f5d;
 	color: #635f5d;
+	cursor: default;
 }
 
 .legend-text {
 	color: #635f5d;
 	fill: #635f5d;
+	cursor: default;
 }
 
 .axis-label,
@@ -22,10 +24,13 @@ body {
 	color: #635f5d;
 	fill: #635f5d;
 	padding: 0.5em;
+	cursor: default;
 }
 
 .single-dropdown {
+	display: flex;
 	padding: 1em;
+	align-items: center;
 }
 
 label,

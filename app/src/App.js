@@ -132,6 +132,7 @@ const App = () => {
 							legendCircleRadius={circleRadius}
 							legendTextOffset={20}
 							onHover={setHoveredValue}
+							hoveredValue={hoveredValue}
 						/>
 					</g>
 					<g opacity={hoveredValue ? 0.2 : 1}>
