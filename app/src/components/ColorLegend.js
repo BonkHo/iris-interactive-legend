@@ -11,6 +11,7 @@ const ColorLegend = ({
 		<g
 			transform={`translate(0, ${i * legendSpacing})`}
 			onMouseEnter={() => onHover(domainValue)}
+			onMouseOut={() => onHover(null)}
 		>
 			<circle fill={colorScale(domainValue)} r={legendCircleRadius} />
 			<text className="legend-text" x={legendTextOffset} dy=".32em">

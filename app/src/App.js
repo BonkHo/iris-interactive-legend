@@ -134,7 +134,7 @@ const App = () => {
 							onHover={setHoveredValue}
 						/>
 					</g>
-					<g opacity={0.3}>
+					<g opacity={hoveredValue ? 0.2 : 1}>
 						<CircleMark
 							data={data}
 							xScale={xScale}
