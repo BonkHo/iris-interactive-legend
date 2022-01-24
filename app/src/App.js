@@ -134,6 +134,19 @@ const App = () => {
 							onHover={setHoveredValue}
 						/>
 					</g>
+					<g opacity={0.3}>
+						<CircleMark
+							data={data}
+							xScale={xScale}
+							yScale={yScale}
+							xValue={xValue}
+							yValue={yValue}
+							colorScale={colorScale}
+							colorValue={colorValue}
+							toolTipFormat={xAxisTickFormat}
+							markRadius={circleRadius}
+						/>
+					</g>
 					<CircleMark
 						data={filteredData}
 						xScale={xScale}
